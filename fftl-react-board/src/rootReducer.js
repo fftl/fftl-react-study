@@ -1,5 +1,7 @@
-import { combineReducers, comineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import { articleReducer } from './slices/articleSlice';
+import { boardReducer } from './slices/boardSlice';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ articleReducer, boardReducer });
 
 export default rootReducer;
